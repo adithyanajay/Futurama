@@ -11,6 +11,10 @@ fetch(url).then(response=>{
             popUp()
             addIdToCards()
         }
+
+        else if(response.status === 404){
+            container.innerHTML = "Error"
+        }
     })
 })
 
